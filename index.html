@@ -20,10 +20,10 @@
         width: 100px; /* Increase the size */
         height: 100px; /* Increase the size */
         border-radius: 50%;
-        margin: auto;
-        position: relative;
+        /* margin: auto; */
+        /* position: relative; */
         box-sizing: border-box;
-        top: 30%;
+        /* top: 30%; */
         animation: rotation 1s linear infinite;
       }
       .loader::after,
@@ -68,10 +68,15 @@
           transform: rotate(-360deg);
         }
       }
+      .parent-loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
   </head>
   <body style="background-color: black;">
-    <div class="full-screen-div" ><div class="loader"></div></div>
+    <div class="full-screen-div parent-loader" ><div class="loader"></div></div>
     <div class="full-screen-div" id="IndStreamPlayer"></div>
     <script>
       const urlString = window.location.href;
